@@ -14,5 +14,8 @@
   "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/Illvili/fast-image-server/issues"
+  },
+  "dependencies": {
+    "electron": "^1.4.11"
   }
 }
