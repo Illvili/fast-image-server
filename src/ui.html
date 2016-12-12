@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fast Image Server</title>
+    <link rel="stylesheet" href="ui.css">
+</head>
+<body id="app">
+    <div id="drop-zone" tabindex="0">
+        <div class="border">Drag &amp; drop or paste image file here</div>
+    </div>
+
+    <div id="cache-path">Cache: {{ config.cache }}</div>
+
+    <div id="latest-file">
+        Latest File:
+        <div class="result"><img src="http://127.0.0.1:8800/f86e2aea0a71c84d8de0cd8d.png" alt=""></div>
+    </div>
+
+    <div id="file-list">
+        File List:
+        <ul>
+            <li v-for="file in fileList">
+                <img :src="'http://127.0.0.1:8800/' + file">
+                {{ file }}
+            </li>
+        </ul>
+    </div>
+    
+    <script src="ui.js"></script>
+</body>
+</html>

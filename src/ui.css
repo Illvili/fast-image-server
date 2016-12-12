@@ -1,0 +1,39 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: monaco;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#drop-zone {
+    flex: 150px;
+    flex-shrink: 1;
+}
+
+#drop-zone > .border {
+    border: 5px dashed #ccc;
+    padding: 20px;
+    color: #999;
+    font-size: 50px;
+    text-align: center;
+    -webkit-user-select: none;
+}
+
+#cache-path {
+    flex: 20px;
+    flex-shrink: 0;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+#latest-files {
+    flex: 100%;
+    flex-shrink: 2;
+    margin-top: 5px;
+}

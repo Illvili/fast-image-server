@@ -2,20 +2,20 @@
   "name": "fast-image-server",
   "version": "1.0.0",
   "description": "mock image fast!",
-  "main": "index.js",
+  "main": "entry.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron ."
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/Illvili/fast-image-server.git"
   },
-  "author": "",
+  "author": "Illvili",
   "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/Illvili/fast-image-server/issues"
   },
-  "dependencies": {
+  "devDependencies": {
     "electron": "^1.4.11"
   }
 }
